@@ -154,8 +154,7 @@ if __name__ == '__main__':
 # Notes section
 # ==============================================================================
 
-# TODO try to insert a Mayavi figure into the GUI ... then rid of Matplotlib for 3d plots
-# TODO Make 3dplots tab as contour plot tab and plot all 3D plots as seperate mlab windows
+# TODO try to insert a Mayavi figure into the GUI ...
 # TODO write seperate windows (e.g., preferences, plot specs, etc) and call backs for various actions such as new file, save file, etc.
 # TODO save a backup .ini file and check whether this file is matching with the new file or not then ask for confirmation to save the new file
 # TODO try to provide status tips as well for all the widgets
