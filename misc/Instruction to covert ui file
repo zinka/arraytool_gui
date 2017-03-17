@@ -1,0 +1,2 @@
+pyside-uic -o arraytool.py arraytool.ui
+

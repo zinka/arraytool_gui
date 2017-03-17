@@ -1,0 +1,1157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1015</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Arraytool GUI Application</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QWidget" name="horizontalLayoutWidget">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QScrollArea" name="scrollArea">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>770</width>
+             <height>756</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="1" column="1">
+             <widget class="QGroupBox" name="groupBox_3">
+              <property name="title">
+               <string>Scan Angles</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_4">
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_5">
+                 <item row="2" column="1">
+                  <widget class="QLineEdit" name="linescanx">
+                   <property name="toolTip">
+                    <string>See the Documentation</string>
+                   </property>
+                   <property name="statusTip">
+                    <string>See the Documentation</string>
+                   </property>
+                   <property name="text">
+                    <string>0</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="QLineEdit" name="linescany">
+                   <property name="toolTip">
+                    <string>See the Documentation</string>
+                   </property>
+                   <property name="statusTip">
+                    <string>See the Documentation</string>
+                   </property>
+                   <property name="text">
+                    <string>0</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_5">
+                   <property name="text">
+                    <string>scan phi (deg)</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_6">
+                   <property name="text">
+                    <string>scan x (deg)</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLineEdit" name="linescanp">
+                   <property name="toolTip">
+                    <string>Phi Component of Scan Angle</string>
+                   </property>
+                   <property name="statusTip">
+                    <string>Phi Component of Scan Angle</string>
+                   </property>
+                   <property name="text">
+                    <string>0</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_7">
+                   <property name="text">
+                    <string>scan theta (deg)</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="label_8">
+                   <property name="text">
+                    <string>scan y (deg)</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLineEdit" name="linescant">
+                   <property name="toolTip">
+                    <string>Theta Component of Scan Angle</string>
+                   </property>
+                   <property name="statusTip">
+                    <string>Theta Component of Scan Angle</string>
+                   </property>
+                   <property name="text">
+                    <string>0</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QGroupBox" name="groupX">
+              <property name="toolTip">
+               <string>Array Distribution along X</string>
+              </property>
+              <property name="statusTip">
+               <string>Array Distribution along X</string>
+              </property>
+              <property name="title">
+               <string>X</string>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="checked">
+               <bool>false</bool>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_6">
+               <item row="3" column="0">
+                <widget class="QLabel" name="label_10">
+                 <property name="text">
+                  <string>SLR (dB)</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QLabel" name="label_11">
+                 <property name="text">
+                  <string>m-bar</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QComboBox" name="comboX">
+                 <property name="toolTip">
+                  <string>Ax(x)</string>
+                 </property>
+                 <property name="statusTip">
+                  <string>Ax(x)</string>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Uniform</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Binomial</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Dolph-Chebyshev</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Taylor One Paramter</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Taylor n-bar (Villeneuve)</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Uniform Diff</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Triangular Diff</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Bayliss n-bar Diff</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QRadioButton" name="radioButton">
+                 <property name="text">
+                  <string>No. of Elements</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <layout class="QVBoxLayout" name="verticalLayout">
+                 <item>
+                  <widget class="QLabel" name="label_9">
+                   <property name="text">
+                    <string>Type</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="linenoeX">
+                 <property name="toolTip">
+                  <string>M</string>
+                 </property>
+                 <property name="statusTip">
+                  <string>M</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLineEdit" name="linebwX">
+                 <property name="toolTip">
+                  <string>BW X</string>
+                 </property>
+                 <property name="statusTip">
+                  <string>BW X</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QLineEdit" name="lineslrX">
+                 <property name="toolTip">
+                  <string>Side Lobe Ratio in X</string>
+                 </property>
+                 <property name="statusTip">
+                  <string>Side Lobe Ratio in X</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="QLineEdit" name="linembar">
+                 <property name="toolTip">
+                  <string>Taylor's n-bar Paramter along X</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QRadioButton" name="radioButton_2">
+                 <property name="text">
+                  <string>Beamwidth (deg)</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QGroupBox" name="groupRho">
+              <property name="toolTip">
+               <string>Array Distribution along Rho</string>
+              </property>
+              <property name="title">
+               <string>Rho</string>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="checked">
+               <bool>false</bool>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_8">
+               <item row="2" column="0">
+                <widget class="QRadioButton" name="radioButton_5">
+                 <property name="text">
+                  <string>Beamwidth (deg)</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QRadioButton" name="radioButton_6">
+                 <property name="text">
+                  <string>No. of Elements</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <layout class="QVBoxLayout" name="verticalLayout_3">
+                 <item>
+                  <widget class="QLabel" name="label_15">
+                   <property name="text">
+                    <string>Type</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="label_16">
+                 <property name="text">
+                  <string>SLR (dB)</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QLabel" name="label_17">
+                 <property name="text">
+                  <string>p-bar</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="linenoeR">
+                 <property name="toolTip">
+                  <string>P (along X axis)</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLineEdit" name="linebwR">
+                 <property name="toolTip">
+                  <string>BW Rho</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QLineEdit" name="lineslrR">
+                 <property name="toolTip">
+                  <string>Side Lobe Ratio in Rho</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="QLineEdit" name="linepbar">
+                 <property name="toolTip">
+                  <string>Taylor's n-bar Paramter along Rho</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QComboBox" name="comboRho">
+                 <property name="toolTip">
+                  <string>Arho(rho)</string>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Uniform</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Hansen One Parameter</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Taylor Circular n-bar</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Circular Bayliss</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QGroupBox" name="groupBox_2">
+              <property name="title">
+               <string>Frequency &amp;&amp; Array Lattice Paramters </string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_3">
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout">
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_3">
+                   <property name="text">
+                    <string>a (mm)</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label">
+                   <property name="text">
+                    <string>b (mm)</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLineEdit" name="linefreq">
+                   <property name="toolTip">
+                    <string>Frequency of Operation</string>
+                   </property>
+                   <property name="statusTip">
+                    <string>Frequency of Operation</string>
+                   </property>
+                   <property name="text">
+                    <string>10</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_2">
+                   <property name="text">
+                    <string>Frequency (GHz)</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="label_4">
+                   <property name="text">
+                    <string>gamma (deg)</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLineEdit" name="linea">
+                   <property name="toolTip">
+                    <string>Uniform Separation along X Axis</string>
+                   </property>
+                   <property name="statusTip">
+                    <string>Uniform Separation along X Axis</string>
+                   </property>
+                   <property name="text">
+                    <string>15</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QLineEdit" name="lineb">
+                   <property name="toolTip">
+                    <string>Uniform Separation along Y Axis</string>
+                   </property>
+                   <property name="statusTip">
+                    <string>Uniform Separation along Y Axis</string>
+                   </property>
+                   <property name="text">
+                    <string>15</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="QLineEdit" name="linegamma">
+                   <property name="toolTip">
+                    <string>Array Lattice Angle</string>
+                   </property>
+                   <property name="statusTip">
+                    <string>Array Lattice Angle</string>
+                   </property>
+                   <property name="text">
+                    <string>90</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QGroupBox" name="groupY">
+              <property name="toolTip">
+               <string>Array Distribution along Y</string>
+              </property>
+              <property name="title">
+               <string>Y</string>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="checked">
+               <bool>false</bool>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_7">
+               <item row="2" column="0">
+                <widget class="QRadioButton" name="radioButton_3">
+                 <property name="text">
+                  <string>Beamwidth (deg)</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QRadioButton" name="radioButton_4">
+                 <property name="text">
+                  <string>No. of Elements</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <layout class="QVBoxLayout" name="verticalLayout_2">
+                 <item>
+                  <widget class="QLabel" name="label_12">
+                   <property name="text">
+                    <string>Type</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="label_13">
+                 <property name="text">
+                  <string>SLR (dB)</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QLabel" name="label_14">
+                 <property name="text">
+                  <string>n-bar</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="linenoeY">
+                 <property name="toolTip">
+                  <string>N</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLineEdit" name="linebwY">
+                 <property name="toolTip">
+                  <string>BW Y</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QLineEdit" name="lineslrY">
+                 <property name="toolTip">
+                  <string>Side Lobe Ratio in Y</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="QLineEdit" name="linenbar">
+                 <property name="toolTip">
+                  <string>Taylor's n-bar Paramter along Y</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QComboBox" name="comboY">
+                 <item>
+                  <property name="text">
+                   <string>Uniform</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Binomial</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Dolph-Chebyshev</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Taylor One Paramter</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Taylor n-bar (Villeneuve)</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Uniform Diff</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Triangular Diff</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Bayliss n-bar Diff</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QGroupBox" name="groupQuant">
+              <property name="title">
+               <string>Quantization, etc.</string>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="checked">
+               <bool>false</bool>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_9">
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="linescanfreq">
+                 <property name="toolTip">
+                  <string>Frequency at which Phase Shifters are Tuned</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <layout class="QVBoxLayout" name="verticalLayout_4">
+                 <item>
+                  <widget class="QLabel" name="label_18">
+                   <property name="text">
+                    <string>Scan Frequency</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="label_19">
+                 <property name="text">
+                  <string>dB Lower limit</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="lineabits">
+                 <property name="toolTip">
+                  <string>Amplitude Quantization bits</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLineEdit" name="linepbits">
+                 <property name="toolTip">
+                  <string>Phase Quantization bits</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QLineEdit" name="linedblimit">
+                 <property name="toolTip">
+                  <string>dB Lower Limit for Plotting Purpose</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0" colspan="2">
+                <widget class="QPushButton" name="pushplotspec">
+                 <property name="toolTip">
+                  <string>Theta Cut, Phi Cut, Theta Resolution, Phi Resolution, 2D Pattern, 3D Pattern, etc</string>
+                 </property>
+                 <property name="text">
+                  <string>Plot Specifications</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_21">
+                 <property name="text">
+                  <string>Amplitude bits</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="label_22">
+                 <property name="text">
+                  <string>Phase bits</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QGroupBox" name="groupOperations">
+              <property name="title">
+               <string>Choose One of the Operations</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_10">
+               <item row="0" column="0">
+                <layout class="QVBoxLayout" name="verticalLayout_5"/>
+               </item>
+               <item row="1" column="0">
+                <widget class="QComboBox" name="comboOperations">
+                 <property name="toolTip">
+                  <string>Choose one of the Operations</string>
+                 </property>
+                 <property name="statusTip">
+                  <string>Choose one of the Operations</string>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Grating Lobe Analysis</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Typical Array Analysis &amp; Synthesis</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>User Defined Array Analysis</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Shaped Beam Synthesis</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Mutual Coupling Analysis</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QGroupBox" name="groupGrating">
+              <property name="title">
+               <string>Grating Lobe Analysis Options</string>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_11">
+               <item row="0" column="0">
+                <layout class="QVBoxLayout" name="verticalLayout_6">
+                 <item>
+                  <widget class="QComboBox" name="comboGrating">
+                   <property name="toolTip">
+                    <string>Choose among Different Scan Sector Options</string>
+                   </property>
+                   <property name="statusTip">
+                    <string>Choose among Different Scan Sector Options</string>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>Conical</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Rectangular</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Knittel Side</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Knittel Top</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="2" column="0" colspan="2">
+             <widget class="QLabel" name="label_20">
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Array Distrbution Type &amp; Specifications</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="currentIndex">
+        <number>3</number>
+       </property>
+       <widget class="QWidget" name="GAtab">
+        <attribute name="title">
+         <string>Array &amp;&amp; Grating Lobes</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_8">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_7"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="cutstab">
+        <attribute name="title">
+         <string>2D Pattern Cuts</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_10">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_9"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="contourtab">
+        <attribute name="title">
+         <string>Contour Plots</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_12">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_11"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="log">
+        <attribute name="title">
+         <string>Log</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_14">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_13"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1015</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="action_New"/>
+    <addaction name="action_Open"/>
+    <addaction name="action_Save"/>
+    <addaction name="actionSave_As"/>
+    <addaction name="separator"/>
+    <addaction name="action_Quit"/>
+   </widget>
+   <widget class="QMenu" name="menu_Edit">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionClear_Data"/>
+    <addaction name="action_Preferences"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionArraytool_Help"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_Edit"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>22</width>
+     <height>22</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_New"/>
+   <addaction name="action_Open"/>
+   <addaction name="action_Save"/>
+   <addaction name="actionClear_Data"/>
+   <addaction name="separator"/>
+   <addaction name="actionSave_As"/>
+   <addaction name="separator"/>
+   <addaction name="action_Preferences"/>
+   <addaction name="actionArraytool_Help"/>
+   <addaction name="separator"/>
+   <addaction name="action_Quit"/>
+   <addaction name="actionRun"/>
+  </widget>
+  <action name="actionRun">
+   <property name="icon">
+    <iconset resource="arraytool.qrc">
+     <normaloff>:/icons/icons/22x22/categories/applications-system.png</normaloff>:/icons/icons/22x22/categories/applications-system.png</iconset>
+   </property>
+   <property name="text">
+    <string>Run</string>
+   </property>
+   <property name="toolTip">
+    <string>Run</string>
+   </property>
+   <property name="statusTip">
+    <string extracomment="sdfsd"/>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="action_New">
+   <property name="icon">
+    <iconset resource="arraytool.qrc">
+     <normaloff>:/icons/icons/22x22/actions/document-new.png</normaloff>:/icons/icons/22x22/actions/document-new.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;New</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="action_Open">
+   <property name="icon">
+    <iconset resource="arraytool.qrc">
+     <normaloff>:/icons/icons/22x22/actions/document-open.png</normaloff>:/icons/icons/22x22/actions/document-open.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Open</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_Save">
+   <property name="icon">
+    <iconset resource="arraytool.qrc">
+     <normaloff>:/icons/icons/22x22/actions/document-save.png</normaloff>:/icons/icons/22x22/actions/document-save.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSave_As">
+   <property name="icon">
+    <iconset resource="arraytool.qrc">
+     <normaloff>:/icons/icons/22x22/actions/document-save-as.png</normaloff>:/icons/icons/22x22/actions/document-save-as.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save &amp;As</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="action_Quit">
+   <property name="icon">
+    <iconset resource="arraytool.qrc">
+     <normaloff>:/icons/icons/22x22/actions/system-log-out.png</normaloff>:/icons/icons/22x22/actions/system-log-out.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="action_Preferences">
+   <property name="icon">
+    <iconset resource="arraytool.qrc">
+     <normaloff>:/icons/icons/22x22/categories/preferences-system.png</normaloff>:/icons/icons/22x22/categories/preferences-system.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Preferences</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+P</string>
+   </property>
+  </action>
+  <action name="actionArraytool_Help">
+   <property name="icon">
+    <iconset resource="arraytool.qrc">
+     <normaloff>:/icons/icons/22x22/apps/help-browser.png</normaloff>:/icons/icons/22x22/apps/help-browser.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Documentation</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+?</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionClear_Data">
+   <property name="icon">
+    <iconset resource="arraytool.qrc">
+     <normaloff>:/icons/icons/22x22/actions/edit-clear.png</normaloff>:/icons/icons/22x22/actions/edit-clear.png</iconset>
+   </property>
+   <property name="text">
+    <string>Clear &amp;Data</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>comboOperations</tabstop>
+  <tabstop>comboGrating</tabstop>
+  <tabstop>linefreq</tabstop>
+  <tabstop>linea</tabstop>
+  <tabstop>lineb</tabstop>
+  <tabstop>linegamma</tabstop>
+  <tabstop>linescant</tabstop>
+  <tabstop>linescanp</tabstop>
+  <tabstop>linescanx</tabstop>
+  <tabstop>linescany</tabstop>
+  <tabstop>groupX</tabstop>
+  <tabstop>comboX</tabstop>
+  <tabstop>radioButton</tabstop>
+  <tabstop>linenoeX</tabstop>
+  <tabstop>radioButton_2</tabstop>
+  <tabstop>linebwX</tabstop>
+  <tabstop>lineslrX</tabstop>
+  <tabstop>linembar</tabstop>
+  <tabstop>groupY</tabstop>
+  <tabstop>radioButton_4</tabstop>
+  <tabstop>linenoeY</tabstop>
+  <tabstop>radioButton_3</tabstop>
+  <tabstop>linebwY</tabstop>
+  <tabstop>lineslrY</tabstop>
+  <tabstop>linenbar</tabstop>
+  <tabstop>groupRho</tabstop>
+  <tabstop>comboRho</tabstop>
+  <tabstop>radioButton_6</tabstop>
+  <tabstop>linenoeR</tabstop>
+  <tabstop>radioButton_5</tabstop>
+  <tabstop>linebwR</tabstop>
+  <tabstop>lineslrR</tabstop>
+  <tabstop>linepbar</tabstop>
+  <tabstop>groupQuant</tabstop>
+  <tabstop>linescanfreq</tabstop>
+  <tabstop>lineabits</tabstop>
+  <tabstop>linepbits</tabstop>
+  <tabstop>linedblimit</tabstop>
+  <tabstop>pushplotspec</tabstop>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>scrollArea</tabstop>
+ </tabstops>
+ <resources>
+  <include location="arraytool.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>groupRho</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>groupX</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>71</x>
+     <y>618</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>64</x>
+     <y>417</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>groupRho</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>groupY</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>125</x>
+     <y>560</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>450</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Quit</sender>
+   <signal>activated()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>429</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

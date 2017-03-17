@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/22x22/actions/edit-clear.png</file>
+    <file>icons/22x22/actions/document-open.png</file>
+    <file>icons/22x22/categories/preferences-system.png</file>
+    <file>icons/22x22/categories/applications-system.png</file>
+    <file>icons/22x22/actions/document-new.png</file>
+    <file>icons/22x22/actions/document-save.png</file>
+    <file>icons/22x22/actions/document-save-as.png</file>
+    <file>icons/22x22/actions/system-log-out.png</file>
+    <file>icons/22x22/apps/help-browser.png</file>
+  </qresource>
+</RCC>

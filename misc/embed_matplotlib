@@ -1,0 +1,78 @@
+from mpl_toolkits.mplot3d import Axes3D
+from matplotlib import cm
+import matplotlib.pyplot as plt
+plt.style.use('seaborn-pastel')
+
+        # ======================================================================
+        # Embedding Matplotlib figures
+        # ======================================================================
+
+        self.figure1 = plt.figure(facecolor='white')
+        self.canvas = FigureCanvas(self.figure1)
+        self.toolbar = NavigationToolbar(self.canvas, self)
+        self.verticalLayout_7.addWidget(self.toolbar)
+        self.verticalLayout_7.addWidget(self.canvas)
+
+        self.figure2 = plt.figure(facecolor='white')
+        self.canvas = FigureCanvas(self.figure2)
+        self.toolbar = NavigationToolbar(self.canvas, self)
+        self.verticalLayout_9.addWidget(self.toolbar)
+        self.verticalLayout_9.addWidget(self.canvas)
+
+        self.figure3 = plt.figure(facecolor='white')
+        self.canvas = FigureCanvas(self.figure3)
+        self.toolbar = NavigationToolbar(self.canvas, self)
+        self.verticalLayout_11.addWidget(self.toolbar)
+        self.verticalLayout_11.addWidget(self.canvas)
+
+        # An example 2D Plot
+        fig = self.figure1
+        ax = fig.add_subplot(211)
+        # ax = fig.add_subplot(111, projection='3d')
+        x = np.random.randn(1000)
+        ax.hist(x, 30)
+        ax.set_xlabel('X Label')
+        ax.set_ylabel('Y Label')
+        ax.axvspan(1.25, 1.55, facecolor='y', alpha=0.5)
+        ax = fig.add_subplot(212)
+        x = np.random.randn(1000)
+        ax.hist(x, 30)
+        ax.set_xlabel('X Label')
+        ax.set_ylabel('Y Label')
+        ax.axvspan(1.25, 1.55, facecolor='y', alpha=0.5)
+        fig.tight_layout()
+
+        # An example 2D Plot
+        fig = self.figure2
+        ax = fig.add_subplot(211)
+        # ax = fig.add_subplot(111, projection='3d')
+        x = np.random.randn(1000)
+        ax.hist(x, 30)
+        ax.set_xlabel('X Label')
+        ax.set_ylabel('Y Label')
+        ax.axvspan(1.25, 1.55, facecolor='y', alpha=0.5)
+        ax = fig.add_subplot(212)
+        x = np.random.randn(1000)
+        ax.hist(x, 30)
+        ax.set_xlabel('X Label')
+        ax.set_ylabel('Y Label')
+        ax.axvspan(1.25, 1.55, facecolor='y', alpha=0.5)
+        fig.tight_layout()
+
+        # An example 2D+3D plot
+        fig = self.figure3
+        ax = fig.add_subplot(211, projection='3d')
+        X = np.arange(-5, 5, 0.2)
+        Y = np.arange(-5, 5, 0.2)
+        X, Y = np.meshgrid(X, Y)
+        R = np.sqrt(X**2 + Y**2)
+        Z = np.sin(R)
+        surf = ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap=cm.viridis,
+                               linewidth=0, antialiased=False)
+        ax = fig.add_subplot(212)
+        x = np.random.randn(1000)
+        ax.hist(x, 30)
+        ax.set_xlabel('X Label')
+        ax.set_ylabel('Y Label')
+        ax.axvspan(1.25, 1.55, facecolor='y', alpha=0.5)
+        fig.tight_layout()
