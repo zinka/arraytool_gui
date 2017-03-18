@@ -822,7 +822,7 @@
         </size>
        </property>
        <property name="currentIndex">
-        <number>3</number>
+        <number>2</number>
        </property>
        <widget class="QWidget" name="GAtab">
         <attribute name="title">
@@ -846,11 +846,62 @@
        </widget>
        <widget class="QWidget" name="contourtab">
         <attribute name="title">
-         <string>Contour Plots</string>
+         <string>Theta Phi Plots</string>
         </attribute>
         <layout class="QVBoxLayout" name="verticalLayout_12">
          <item>
-          <layout class="QVBoxLayout" name="verticalLayout_11"/>
+          <layout class="QVBoxLayout" name="verticalLayout_11">
+           <item>
+            <widget class="QTabWidget" name="tabWidget_2">
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <widget class="QWidget" name="tab_2">
+              <attribute name="title">
+               <string>Contour Plot</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="tab_3">
+              <attribute name="title">
+               <string>3D Polar Plot</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="tab_6">
+              <attribute name="title">
+               <string>3D Surf Plot</string>
+              </attribute>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>UV Plots</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_16">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_15">
+           <item>
+            <widget class="QTabWidget" name="tabWidget_3">
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <widget class="QWidget" name="tab_4">
+              <attribute name="title">
+               <string>Contour Plot</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="tab_5">
+              <attribute name="title">
+               <string>3D Surf Plot</string>
+              </attribute>
+             </widget>
+            </widget>
+           </item>
+          </layout>
          </item>
         </layout>
        </widget>
@@ -895,7 +946,6 @@
     </property>
     <addaction name="separator"/>
     <addaction name="actionClear_Data"/>
-    <addaction name="action_Preferences"/>
    </widget>
    <widget class="QMenu" name="menu_Help">
     <property name="title">
@@ -904,8 +954,19 @@
     <addaction name="actionArraytool_Help"/>
     <addaction name="actionAbout"/>
    </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionArray_Grating_Lobes"/>
+    <addaction name="action2D_Pattern_Vuts"/>
+    <addaction name="actionTheta_Phi_Plots"/>
+    <addaction name="actionUV_Plots"/>
+    <addaction name="actionMisc"/>
+   </widget>
    <addaction name="menu_File"/>
    <addaction name="menu_Edit"/>
+   <addaction name="menuView"/>
    <addaction name="menu_Help"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
@@ -928,14 +989,14 @@
    <addaction name="action_New"/>
    <addaction name="action_Open"/>
    <addaction name="action_Save"/>
-   <addaction name="actionClear_Data"/>
    <addaction name="separator"/>
    <addaction name="actionSave_As"/>
+   <addaction name="actionClear_Data"/>
    <addaction name="separator"/>
-   <addaction name="action_Preferences"/>
    <addaction name="actionArraytool_Help"/>
    <addaction name="separator"/>
    <addaction name="action_Quit"/>
+   <addaction name="separator"/>
    <addaction name="actionRun"/>
   </widget>
   <action name="actionRun">
@@ -1016,18 +1077,6 @@
     <string>Ctrl+Q</string>
    </property>
   </action>
-  <action name="action_Preferences">
-   <property name="icon">
-    <iconset resource="arraytool.qrc">
-     <normaloff>:/icons/icons/22x22/categories/preferences-system.png</normaloff>:/icons/icons/22x22/categories/preferences-system.png</iconset>
-   </property>
-   <property name="text">
-    <string>&amp;Preferences</string>
-   </property>
-   <property name="shortcut">
-    <string>Ctrl+Shift+P</string>
-   </property>
-  </action>
   <action name="actionArraytool_Help">
    <property name="icon">
     <iconset resource="arraytool.qrc">
@@ -1037,7 +1086,7 @@
     <string>&amp;Documentation</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+?</string>
+    <string>F1</string>
    </property>
   </action>
   <action name="actionAbout">
@@ -1055,6 +1104,61 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actionArray_Grating_Lobes">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Array &amp;&amp; Grating Lobes</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+1</string>
+   </property>
+  </action>
+  <action name="action2D_Pattern_Vuts">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>2D Pattern Cuts</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+2</string>
+   </property>
+  </action>
+  <action name="actionTheta_Phi_Plots">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Theta Phi Plots</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+3</string>
+   </property>
+  </action>
+  <action name="actionUV_Plots">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>UV Plots</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+4</string>
+   </property>
+  </action>
+  <action name="actionMisc">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Log</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+5</string>
    </property>
   </action>
  </widget>

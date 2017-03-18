@@ -72,7 +72,6 @@ class ExampleApp(QtGui.QMainWindow, arraytool.Ui_MainWindow):
             self.action_Save.setIcon(QtGui.QIcon.fromTheme("document-save"))
             self.actionSave_As.setIcon(QtGui.QIcon.fromTheme("document-save-as"))
             self.action_Quit.setIcon(QtGui.QIcon.fromTheme("application-exit"))
-            self.action_Preferences.setIcon(QtGui.QIcon.fromTheme("document-properties"))
             self.actionArraytool_Help.setIcon(QtGui.QIcon.fromTheme("help-contents"))
             self.actionRun.setIcon(QtGui.QIcon.fromTheme("system-run"))
             self.actionClear_Data.setIcon(QtGui.QIcon.fromTheme("edit-clear"))
