@@ -1,6 +1,6 @@
 import sys
-from PyQt4.QtCore import *
-from PyQt4.QtGui import *
+from PySide.QtCore import *
+from PySide.QtGui import *
 import inspect
 
 def guisave(self):
@@ -43,12 +43,14 @@ def guirestore(self):
 
         if isinstance(obj, QLineEdit):
             name = obj.objectName()
-            value = unicode(self.settings.value(name).toString())  # get stored value from registry
+            value = self.settings.value(name)
+            # value = unicode(self.settings.value(name).toString())  # get stored value from registry
             obj.setText(value)  # restore lineEditFile
 
         if isinstance(obj, QGroupBox):
             name = obj.objectName()
-            value = self.settings.value(name).toBool()   # get stored value from registry
+            value = self.settings.value(name)   # get stored value from registry
+            value = True if value == 'true' else False
             if value != None:
                 obj.setChecked(value)   # restore checkbox
 
@@ -56,7 +58,7 @@ def guirestore(self):
             index = obj.currentIndex()  # get current region from combobox
             # text   = obj.itemText(index)   # get the text for new selected index
             name = obj.objectName()
-            value = unicode(self.settings.value(name).toString())
+            value = self.settings.value(name)
             if value == "":
                 continue
             # get the corresponding index for specified string in combobox
@@ -71,13 +73,14 @@ def guirestore(self):
                 obj.setCurrentIndex(index)
 
         if isinstance(obj, QRadioButton):
-         name = obj.objectName()
-         value = self.settings.value(name).toBool()  # get stored value from registry
-         if value != None:
-             obj.setChecked(value)
+            name = obj.objectName()
+            value = self.settings.value(name)   # get stored value from registry
+            value = True if value == 'true' else False
+            if value != None:
+                obj.setChecked(value)
 
         if isinstance(obj, QCheckBox):
-          name = obj.objectName()
-          value = self.settings.value(name).toBool()  # get stored value from registry
-          if value != None:
-              obj.setChecked(value)  # restore checkbox
+            name = obj.objectName()
+            value = self.settings.value(name).toBool()  # get stored value from registry
+            if value != None:
+                obj.setChecked(value)  # restore checkbox

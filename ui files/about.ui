@@ -17,11 +17,11 @@
    <item>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <widget class="QTabWidget" name="tabWidget">
+      <widget class="QTabWidget" name="tabAbout">
        <property name="currentIndex">
-        <number>2</number>
+        <number>0</number>
        </property>
-       <widget class="QWidget" name="tab">
+       <widget class="QWidget" name="tabVersion">
         <attribute name="title">
          <string>Version</string>
         </attribute>
@@ -51,7 +51,7 @@ p, li { white-space: pre-wrap; }
          </item>
         </layout>
        </widget>
-       <widget class="QWidget" name="tab_2">
+       <widget class="QWidget" name="tabCredit">
         <attribute name="title">
          <string>Credits</string>
         </attribute>
@@ -77,7 +77,7 @@ p, li { white-space: pre-wrap; }
          </item>
         </layout>
        </widget>
-       <widget class="QWidget" name="tab_3">
+       <widget class="QWidget" name="tabCopyright">
         <attribute name="title">
          <string>Copyright</string>
         </attribute>
@@ -121,7 +121,7 @@ p, li { white-space: pre-wrap; }
          </item>
         </layout>
        </widget>
-       <widget class="QWidget" name="tab_4">
+       <widget class="QWidget" name="tabBuild">
         <attribute name="title">
          <string>Build Info</string>
         </attribute>
@@ -151,7 +151,7 @@ p, li { white-space: pre-wrap; }
          </item>
         </layout>
        </widget>
-       <widget class="QWidget" name="tab_5">
+       <widget class="QWidget" name="tabRelease">
         <attribute name="title">
          <string>Release Notes</string>
         </attribute>

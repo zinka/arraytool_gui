@@ -15,7 +15,7 @@
   </property>
   <layout class="QGridLayout" name="gridLayout_6">
    <item row="0" column="0">
-    <widget class="QGroupBox" name="groupBox">
+    <widget class="QGroupBox" name="groupBox2D">
      <property name="title">
       <string>2D Pattern Cuts</string>
      </property>
@@ -26,7 +26,7 @@
       <item row="0" column="0">
        <layout class="QGridLayout" name="gridLayout">
         <item row="2" column="1">
-         <widget class="QLineEdit" name="lineEdit_3">
+         <widget class="QLineEdit" name="lineEdit_dtht">
           <property name="text">
            <string>1</string>
           </property>
@@ -47,14 +47,14 @@
          </widget>
         </item>
         <item row="1" column="1">
-         <widget class="QLineEdit" name="lineEdit_2">
+         <widget class="QLineEdit" name="lineEdit_phi">
           <property name="text">
            <string>0</string>
           </property>
          </widget>
         </item>
         <item row="0" column="1">
-         <widget class="QLineEdit" name="lineEdit">
+         <widget class="QLineEdit" name="lineEdit_tht">
           <property name="text">
            <string>90</string>
           </property>
@@ -75,7 +75,7 @@
          </widget>
         </item>
         <item row="3" column="1">
-         <widget class="QLineEdit" name="lineEdit_4">
+         <widget class="QLineEdit" name="lineEdit_dphi">
           <property name="text">
            <string>1</string>
           </property>
@@ -87,7 +87,7 @@
     </widget>
    </item>
    <item row="0" column="1">
-    <widget class="QGroupBox" name="groupBox_2">
+    <widget class="QGroupBox" name="groupBoxTP">
      <property name="title">
       <string>Tht, Phi Data </string>
      </property>
@@ -98,14 +98,14 @@
       <item row="0" column="0">
        <layout class="QGridLayout" name="gridLayout_3">
         <item row="3" column="1">
-         <widget class="QLineEdit" name="lineEdit_8">
+         <widget class="QLineEdit" name="lineEdit_phimax">
           <property name="text">
            <string>180</string>
           </property>
          </widget>
         </item>
         <item row="1" column="1">
-         <widget class="QLineEdit" name="lineEdit_6">
+         <widget class="QLineEdit" name="lineEdit_thtmax">
           <property name="text">
            <string>90</string>
           </property>
@@ -126,14 +126,14 @@
          </widget>
         </item>
         <item row="2" column="1">
-         <widget class="QLineEdit" name="lineEdit_7">
+         <widget class="QLineEdit" name="lineEdit_phimin">
           <property name="text">
            <string>0</string>
           </property>
          </widget>
         </item>
         <item row="0" column="1">
-         <widget class="QLineEdit" name="lineEdit_5">
+         <widget class="QLineEdit" name="lineEdit_thtmin">
           <property name="text">
            <string>0</string>
           </property>
@@ -168,14 +168,14 @@
          </widget>
         </item>
         <item row="4" column="1">
-         <widget class="QLineEdit" name="lineEdit_13">
+         <widget class="QLineEdit" name="lineEdit_dtht2">
           <property name="text">
            <string>1</string>
           </property>
          </widget>
         </item>
         <item row="5" column="1">
-         <widget class="QLineEdit" name="lineEdit_14">
+         <widget class="QLineEdit" name="lineEdit_dphi2">
           <property name="text">
            <string>1</string>
           </property>
@@ -189,14 +189,14 @@
    <item row="0" column="3">
     <layout class="QGridLayout" name="gridLayout_5">
      <item row="0" column="0">
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="pref_cancel">
        <property name="text">
         <string>Cancel</string>
        </property>
       </widget>
      </item>
      <item row="0" column="1">
-      <widget class="QPushButton" name="pushButton_2">
+      <widget class="QPushButton" name="pref_OK">
        <property name="text">
         <string>OK</string>
        </property>
@@ -205,7 +205,7 @@
     </layout>
    </item>
    <item row="0" column="2">
-    <widget class="QGroupBox" name="groupBox_3">
+    <widget class="QGroupBox" name="groupBoxUV">
      <property name="title">
       <string>U, V Data</string>
      </property>
@@ -216,14 +216,14 @@
       <item row="0" column="0">
        <layout class="QGridLayout" name="gridLayout_8">
         <item row="3" column="1">
-         <widget class="QLineEdit" name="lineEdit_9">
+         <widget class="QLineEdit" name="lineEdit_vmax">
           <property name="text">
            <string>1</string>
           </property>
          </widget>
         </item>
         <item row="1" column="1">
-         <widget class="QLineEdit" name="lineEdit_10">
+         <widget class="QLineEdit" name="lineEdit_umax">
           <property name="text">
            <string>1</string>
           </property>
@@ -244,14 +244,14 @@
          </widget>
         </item>
         <item row="2" column="1">
-         <widget class="QLineEdit" name="lineEdit_11">
+         <widget class="QLineEdit" name="lineEdit_vmin">
           <property name="text">
            <string>-1</string>
           </property>
          </widget>
         </item>
         <item row="0" column="1">
-         <widget class="QLineEdit" name="lineEdit_12">
+         <widget class="QLineEdit" name="lineEdit_umin">
           <property name="text">
            <string>-1</string>
           </property>
@@ -286,14 +286,14 @@
          </widget>
         </item>
         <item row="4" column="1">
-         <widget class="QLineEdit" name="lineEdit_15">
+         <widget class="QLineEdit" name="lineEdit_du">
           <property name="text">
            <string>0.05</string>
           </property>
          </widget>
         </item>
         <item row="5" column="1">
-         <widget class="QLineEdit" name="lineEdit_16">
+         <widget class="QLineEdit" name="lineEdit_dv">
           <property name="text">
            <string>0.05</string>
           </property>

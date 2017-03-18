@@ -117,7 +117,7 @@ class ExampleApp(QtGui.QMainWindow, arraytool.Ui_MainWindow):
         # writting the log data
         self.textLog1 = QtGui.QTextBrowser()
         self.textLog1.setObjectName(_fromUtf8("textLog"))
-        self.verticalLayout_13.addWidget(self.textLog1)
+        self.verticalLayout_Log.addWidget(self.textLog1)
         XStream.stdout().messageWritten.connect( self.textLog1.insertPlainText )
         XStream.stderr().messageWritten.connect( self.textLog1.insertPlainText )
         self.pushplotspec.clicked.connect(self.test)
@@ -134,7 +134,7 @@ class ExampleApp(QtGui.QMainWindow, arraytool.Ui_MainWindow):
             event.accept()
 
     def test( self ):
-        self.tabWidget.setCurrentIndex(3)
+        self.tabWidget.setCurrentIndex(4)
         logger.debug('debug message')
         logger.info('info message')
         logger.warning('warning message')
@@ -153,7 +153,7 @@ if __name__ == '__main__':
 # Notes section
 # ==============================================================================
 
-# TODO try to insert a Mayavi figure into the GUI ...
-# TODO write seperate windows (e.g., preferences, plot specs, etc) and call backs for various actions such as new file, save file, etc.
+# TODO write windows for Open and Save As actions
 # TODO save a backup .ini file and check whether this file is matching with the new file or not then ask for confirmation to save the new file
 # TODO try to provide status tips as well for all the widgets
+# TODO try to insert a Mayavi figure into the GUI ... after VTK is upgraded to Qt5

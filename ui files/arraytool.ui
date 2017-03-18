@@ -36,8 +36,8 @@
           <widget class="QWidget" name="scrollAreaWidgetContents">
            <property name="geometry">
             <rect>
-             <x>0</x>
-             <y>0</y>
+             <x>-61</x>
+             <y>-271</y>
              <width>770</width>
              <height>756</height>
             </rect>
@@ -239,30 +239,30 @@
                <item row="1" column="1">
                 <widget class="QLineEdit" name="linenoeX">
                  <property name="toolTip">
-                  <string>M</string>
+                  <string>No. of Elements along X (N)</string>
                  </property>
                  <property name="statusTip">
-                  <string>M</string>
+                  <string>No. of Elements along X (N)</string>
                  </property>
                 </widget>
                </item>
                <item row="2" column="1">
                 <widget class="QLineEdit" name="linebwX">
                  <property name="toolTip">
-                  <string>BW X</string>
+                  <string>Beamwidth along Phi=0 Cut</string>
                  </property>
                  <property name="statusTip">
-                  <string>BW X</string>
+                  <string>Beamwidth along Phi=0 Cut</string>
                  </property>
                 </widget>
                </item>
                <item row="3" column="1">
                 <widget class="QLineEdit" name="lineslrX">
                  <property name="toolTip">
-                  <string>Side Lobe Ratio in X</string>
+                  <string>Side Lobe Ratio along X</string>
                  </property>
                  <property name="statusTip">
-                  <string>Side Lobe Ratio in X</string>
+                  <string>Side Lobe Ratio along X</string>
                  </property>
                 </widget>
                </item>
@@ -340,27 +340,39 @@
                <item row="1" column="1">
                 <widget class="QLineEdit" name="linenoeR">
                  <property name="toolTip">
-                  <string>P (along X axis)</string>
+                  <string>No. of Elements along Rho (P)</string>
+                 </property>
+                 <property name="statusTip">
+                  <string>No. of Elements along Rho (P)</string>
                  </property>
                 </widget>
                </item>
                <item row="2" column="1">
                 <widget class="QLineEdit" name="linebwR">
                  <property name="toolTip">
-                  <string>BW Rho</string>
+                  <string>Beamwidth along Phi=0 Cut</string>
+                 </property>
+                 <property name="statusTip">
+                  <string>Beamwidth along Phi=0 Cut</string>
                  </property>
                 </widget>
                </item>
                <item row="3" column="1">
                 <widget class="QLineEdit" name="lineslrR">
                  <property name="toolTip">
-                  <string>Side Lobe Ratio in Rho</string>
+                  <string>Side Lobe Ratio along Rho</string>
+                 </property>
+                 <property name="statusTip">
+                  <string>Side Lobe Ratio along Rho</string>
                  </property>
                 </widget>
                </item>
                <item row="4" column="1">
                 <widget class="QLineEdit" name="linepbar">
                  <property name="toolTip">
+                  <string>Taylor's n-bar Paramter along Rho</string>
+                 </property>
+                 <property name="statusTip">
                   <string>Taylor's n-bar Paramter along Rho</string>
                  </property>
                 </widget>
@@ -545,21 +557,30 @@
                <item row="1" column="1">
                 <widget class="QLineEdit" name="linenoeY">
                  <property name="toolTip">
-                  <string>N</string>
+                  <string>No. of Elements along Y (N)</string>
+                 </property>
+                 <property name="statusTip">
+                  <string>No. of Elements along Y (N)</string>
                  </property>
                 </widget>
                </item>
                <item row="2" column="1">
                 <widget class="QLineEdit" name="linebwY">
                  <property name="toolTip">
-                  <string>BW Y</string>
+                  <string>Beamwidth along Phi=90 Cut</string>
+                 </property>
+                 <property name="statusTip">
+                  <string>Beamwidth along Phi=90 Cut</string>
                  </property>
                 </widget>
                </item>
                <item row="3" column="1">
                 <widget class="QLineEdit" name="lineslrY">
                  <property name="toolTip">
-                  <string>Side Lobe Ratio in Y</string>
+                  <string>Side Lobe Ratio along Y</string>
+                 </property>
+                 <property name="statusTip">
+                  <string>Side Lobe Ratio along Y</string>
                  </property>
                 </widget>
                </item>
@@ -634,6 +655,9 @@
                  <property name="toolTip">
                   <string>Frequency at which Phase Shifters are Tuned</string>
                  </property>
+                 <property name="statusTip">
+                  <string>Frequency at which Phase Shifters are Tuned</string>
+                 </property>
                 </widget>
                </item>
                <item row="0" column="0">
@@ -659,11 +683,17 @@
                  <property name="toolTip">
                   <string>Amplitude Quantization bits</string>
                  </property>
+                 <property name="statusTip">
+                  <string>Amplitude Quantization bits</string>
+                 </property>
                 </widget>
                </item>
                <item row="2" column="1">
                 <widget class="QLineEdit" name="linepbits">
                  <property name="toolTip">
+                  <string>Phase Quantization bits</string>
+                 </property>
+                 <property name="statusTip">
                   <string>Phase Quantization bits</string>
                  </property>
                 </widget>
@@ -673,11 +703,17 @@
                  <property name="toolTip">
                   <string>dB Lower Limit for Plotting Purpose</string>
                  </property>
+                 <property name="statusTip">
+                  <string>dB Lower Limit for Plotting Purpose</string>
+                 </property>
                 </widget>
                </item>
                <item row="4" column="0" colspan="2">
                 <widget class="QPushButton" name="pushplotspec">
                  <property name="toolTip">
+                  <string>Theta Cut, Phi Cut, Theta Resolution, Phi Resolution, 2D Pattern, 3D Pattern, etc</string>
+                 </property>
+                 <property name="statusTip">
                   <string>Theta Cut, Phi Cut, Theta Resolution, Phi Resolution, 2D Pattern, 3D Pattern, etc</string>
                  </property>
                  <property name="text">
@@ -822,7 +858,7 @@
         </size>
        </property>
        <property name="currentIndex">
-        <number>2</number>
+        <number>4</number>
        </property>
        <widget class="QWidget" name="GAtab">
         <attribute name="title">
@@ -830,7 +866,7 @@
         </attribute>
         <layout class="QVBoxLayout" name="verticalLayout_8">
          <item>
-          <layout class="QVBoxLayout" name="verticalLayout_7"/>
+          <layout class="QVBoxLayout" name="verticalLayout_AGL"/>
          </item>
         </layout>
        </widget>
@@ -840,7 +876,7 @@
         </attribute>
         <layout class="QVBoxLayout" name="verticalLayout_10">
          <item>
-          <layout class="QVBoxLayout" name="verticalLayout_9"/>
+          <layout class="QVBoxLayout" name="verticalLayout_2D"/>
          </item>
         </layout>
        </widget>
@@ -911,7 +947,7 @@
         </attribute>
         <layout class="QVBoxLayout" name="verticalLayout_14">
          <item>
-          <layout class="QVBoxLayout" name="verticalLayout_13"/>
+          <layout class="QVBoxLayout" name="verticalLayout_Log"/>
          </item>
         </layout>
        </widget>
